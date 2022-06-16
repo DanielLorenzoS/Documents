@@ -2,11 +2,9 @@ package com.uploadownload.uploadownload.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
@@ -19,7 +17,9 @@ public class FileDB {
 	private String id;
 
 	private String name;
+
 	private String type;
+
 	@Lob
 	private byte[] data;
 
@@ -27,6 +27,7 @@ public class FileDB {
 	}
 
 	public FileDB(String name, String type, byte[] data) {
+		this.id = id;
 		this.name = name;
 		this.type = type;
 		this.data = data;

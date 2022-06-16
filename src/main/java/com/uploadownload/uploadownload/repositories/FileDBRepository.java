@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.uploadownload.uploadownload.entities.FileDB;
 
 @Repository
-public interface FileDBRepository extends JpaRepository<FileDB, String>{
+public interface FileDBRepository extends JpaRepository<FileDB, String> {
 
 }
